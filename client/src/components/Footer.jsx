@@ -14,7 +14,7 @@ function Footer() {
       boxShadow: '0 -2px 8px rgba(0,0,0,0.07)',
       marginTop: 'auto',
     }}>
-      &copy; {new Date().getFullYear()} To-Do Manager. Made with <span style={{color:'#fff'}}>♥</span> in Salmon.
+      &copy; {new Date().getFullYear()} To-Do Manager. Made with <span style={{color:'#fff'}}>♥</span> by Atheeq.
     </footer>
   );
 }

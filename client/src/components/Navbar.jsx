@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
-    <AppBar position="static" className="app-bar" sx={{ background: '#1976d2', boxShadow: 2 }}>
+    <AppBar position="static" className="app-bar" sx={{ background: '#d54939ff', boxShadow: 2 }}>
       <Toolbar sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', px: { xs: 1, sm: 2 } }}>
         <Typography variant="h6" component="div" sx={{ fontWeight: 600 }}>
           <Link to="/" style={{ color: "#fff", textDecoration: "none" }}>
