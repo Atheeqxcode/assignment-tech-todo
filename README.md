@@ -1,12 +1,44 @@
-# React + Vite
+# To-Do Manager
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Tech Stack
+- **Frontend:** React, Material-UI, Vite
+- **Backend:** Node.js, Express, MongoDB, Mongoose, Zod
+- **Styling:** Custom CSS, Material-UI Theme (Salmon)
+- **Icons:** Unicode emoji
 
-Currently, two official plugins are available:
+## How to Run
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Backend
+1. Go to the `server` directory:
+   ```sh
+   cd server
+   npm install
+   node src/server.js
+   ```
+   - Ensure MongoDB is running locally (`mongod`).
+   - Configure `.env` with:
+     ```
+     PORT=5000
+     MONGODB_URI=mongodb://localhost:27017/todo_manager
+     ```
 
-## Expanding the ESLint configuration
+### Frontend
+1. Go to the `client` directory:
+   ```sh
+   cd client
+   npm install
+   npm run dev
+   ```
+2. Open [http://localhost:5173](http://localhost:5173) in your browser.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Features
+- Add, edit, delete, and complete tasks
+- Responsive, modern salmon-themed UI
+- 3x3 grid view for tasks
+- Toast notifications for all actions
+- History page for completed notes
+- Navbar and footer always visible
+- All actions update instantly in the UI
+
+---
+Made with ❤️ By Atheeq.

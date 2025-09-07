@@ -8,6 +8,7 @@ import TaskDetailPage from "./pages/TaskDetailPage";
 import NewTaskPage from "./pages/NewTaskPage";
 import EditTaskPage from "./pages/EditTaskPage";
 import Footer from "./components/Footer";
+import HistoryPage from "./pages/HistoryPage";
 
 const theme = createTheme({
   palette: {
@@ -36,8 +37,9 @@ function App() {
           <Routes>
             <Route path="/" element={<TasksPage />} />
             <Route path="/tasks/:id" element={<TaskDetailPage />} />
-            <Route path="/new" element={<NewTaskPage />} />
+            <Route path="/new" element={<NewTaskPage smallForm={true} />} />
             <Route path="/edit/:id" element={<EditTaskPage />} />
+            <Route path="/history" element={<HistoryPage />} />
           </Routes>
         </div>
         <Footer />

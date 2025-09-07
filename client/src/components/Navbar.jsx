@@ -11,11 +11,16 @@ function Navbar() {
         <Typography variant="h6" component="div" sx={{ fontWeight: 600 }}>
           <Link to="/" style={{ color: "#fff", textDecoration: "none" }}>
             To-Do Manager
-          </Link>
+          </Link><h2 style={{display: 'inline', marginLeft: 10, fontSize: '0.9rem', fontWeight: 400, color: '#ffe1dc', justifyContent: 'center'}}>IRON LADY</h2>
         </Typography>
-        <Link to="/new" style={{ color: "#fff", textDecoration: "none", fontWeight: 500, fontSize: '1rem', padding: '8px 16px', borderRadius: '6px', background: '#1565c0', boxShadow: '0 2px 8px rgba(25,118,210,0.08)' }}>
-          New Task
-        </Link>
+        <div style={{ display: 'flex', gap: 16 }}>
+          <Link to="/history" style={{ color: "#fff", textDecoration: "none", fontWeight: 500, fontSize: '1rem', padding: '8px 16px', borderRadius: '6px', background: '#FA8072', boxShadow: '0 2px 8px rgba(25,118,210,0.08)' }}>
+            History
+          </Link>
+          <Link to="/new" style={{ color: "#fff", textDecoration: "none", fontWeight: 500, fontSize: '1rem', padding: '8px 16px', borderRadius: '6px', background: '#1565c0', boxShadow: '0 2px 8px rgba(25,118,210,0.08)' }}>
+            New Task
+          </Link>
+        </div>
       </Toolbar>
     </AppBar>
   );
